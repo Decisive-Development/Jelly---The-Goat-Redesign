@@ -1,0 +1,5 @@
+$site-width: 1300px;
+
+@mixin min-1000 {
+    @media only screen and (min-width: 1000px) { @content; }
+}

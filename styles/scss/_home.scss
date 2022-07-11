@@ -1,0 +1,33 @@
+.home-main{
+    background-image: url("/images/main-background.jpg");
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    .main-text {
+        color: white;
+        h1 {
+            font-size: 4rem;
+            font-weight: 100;
+        }
+    }
+    #jelly {
+        font-family: 'Parisienne', cursive;
+        color: black;
+        padding-left: 4rem;
+    }    
+    #goat {
+        font-family: 'Baloo Bhai', monospace;
+        color: black;
+    }        
+    .logo-img{
+        width: 200px;
+    }
+}
