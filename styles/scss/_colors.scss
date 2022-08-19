@@ -2,7 +2,15 @@
  $off-white-75: rgba(234, 234, 234, .75);
  $off-white-50: rgba(234, 234, 234, .5);
  $off-white-25: rgba(234, 234, 234, .25);
- $light-purple: #893168;
+ $light-purple: #89ff3168;
  $purple: #4A1942;
  $dark-purple: #2E1C2B;
  $black: #050404;
+
+ .light{
+    background-color: $purple;
+ }
+
+ .dark{
+    background-color: $dark-purple;
+ }

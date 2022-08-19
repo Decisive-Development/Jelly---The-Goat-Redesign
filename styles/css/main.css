@@ -39,22 +39,31 @@ textarea {
   white-space: revert;
 }
 
+.light {
+  background-color: #4A1942;
+}
+
+.dark {
+  background-color: #2E1C2B;
+}
+
 .home-main {
   background-image: url("/images/main-background.jpg");
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 140px);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-  background-position: top;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  margin-top: 140px;
 }
 .home-main .main-text {
   color: white;
+  margin-bottom: 6%;
 }
 .home-main .main-text h1 {
   font-size: 4rem;
@@ -73,6 +82,105 @@ textarea {
   width: 200px;
 }
 
+.page-divider {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-divider .divider-text {
+  color: #EAEAEA;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.home-para {
+  background-image: url("/images/med-background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.home-info {
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.home-info .info-wrapper {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 0;
+}
+.home-info .info-wrapper .guy-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.home-info .info-wrapper .guy-wrapper .guy-img-wrapper {
+  max-width: 45rem;
+}
+.home-info .info-wrapper .guy-wrapper .guy-text-wrapper {
+  padding: 2.5rem 5rem;
+  max-width: 45rem;
+  color: black;
+}
+.home-info .info-wrapper .guy-wrapper .guy-text-wrapper h2, .home-info .info-wrapper .guy-wrapper .guy-text-wrapper h3 {
+  font-family: "Parisienne", cursive;
+}
+.home-info .info-wrapper .guy-wrapper .guy-text-wrapper h2 {
+  font-size: 5rem;
+}
+.home-info .info-wrapper .guy-wrapper .guy-text-wrapper h3 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.home-info .info-wrapper .guy-wrapper .guy-text-wrapper p {
+  font-size: 2rem;
+}
+.home-info .info-wrapper .info-spacer {
+  font-size: 4rem;
+  margin: 3rem auto;
+}
+.home-info .info-wrapper .jack-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.home-info .info-wrapper .jack-wrapper .jack-img-wrapper {
+  max-width: 45rem;
+}
+.home-info .info-wrapper .jack-wrapper .jack-text-wrapper {
+  padding: 2.5rem 5rem;
+  max-width: 45rem;
+  color: black;
+}
+.home-info .info-wrapper .jack-wrapper .jack-text-wrapper h2, .home-info .info-wrapper .jack-wrapper .jack-text-wrapper h3 {
+  font-family: "Baloo Bhai", monospace;
+  text-align: end;
+}
+.home-info .info-wrapper .jack-wrapper .jack-text-wrapper h2 {
+  font-size: 5rem;
+}
+.home-info .info-wrapper .jack-wrapper .jack-text-wrapper h3 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.home-info .info-wrapper .jack-wrapper .jack-text-wrapper p {
+  font-size: 2rem;
+  text-align: end;
+}
+
 .nav-hero {
   width: 100%;
   display: flex;
@@ -82,6 +190,8 @@ textarea {
   background-color: #EAEAEA;
   position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 @media only screen and (min-width: 1000px) {
   .nav-hero {
@@ -232,7 +342,7 @@ textarea {
 }
 @media only screen and (min-width: 1000px) {
   .nav-hero .nav-wrapper .navbar .nav-list .nav-item .nav-link::before {
-    background-color: #333;
+    background-color: #4A1942;
   }
 }
 .nav-hero .nav-wrapper .navbar .nav-list .nav-item .nav-link:hover::before {
