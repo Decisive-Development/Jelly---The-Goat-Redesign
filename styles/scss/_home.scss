@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    align-items: center;
     .info-wrapper{
         max-width: 1300px;
         display: flex;
@@ -74,6 +75,29 @@
             justify-content: center;
             .guy-img-wrapper{
                 max-width: 45rem;
+                position: relative;
+                img{
+                    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                }
+                .guy-img-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(-5deg);
+                    z-index: -1;
+                    opacity: 0.5;
+                }
+                .guy-img-bg:nth-child(3) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(7deg);
+                    z-index: -2;
+                    opacity: 0.3;
+                }                  
+                   
             }
             .guy-text-wrapper{
                 padding: 2.5rem 5rem;
@@ -104,6 +128,28 @@
             flex-direction: row-reverse;
             .jack-img-wrapper{
                 max-width: 45rem;
+                position: relative;
+                img{
+                    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+                }
+                .jack-img-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(2deg);
+                    z-index: -1;
+                    opacity: 0.5;
+                }
+                .jack-img-bg:nth-child(3) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(-7deg);
+                    z-index: -2;
+                    opacity: 0.3;
+                }
             }
             .jack-text-wrapper{
                 padding: 2.5rem 5rem;

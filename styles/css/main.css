@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 10px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
 a {
@@ -116,6 +117,7 @@ textarea {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  align-items: center;
 }
 .home-info .info-wrapper {
   max-width: 1300px;
@@ -129,6 +131,26 @@ textarea {
 }
 .home-info .info-wrapper .guy-wrapper .guy-img-wrapper {
   max-width: 45rem;
+  position: relative;
+}
+.home-info .info-wrapper .guy-wrapper .guy-img-wrapper img {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.home-info .info-wrapper .guy-wrapper .guy-img-wrapper .guy-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+  opacity: 0.5;
+}
+.home-info .info-wrapper .guy-wrapper .guy-img-wrapper .guy-img-bg:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(7deg);
+  z-index: -2;
+  opacity: 0.3;
 }
 .home-info .info-wrapper .guy-wrapper .guy-text-wrapper {
   padding: 2.5rem 5rem;
@@ -159,6 +181,26 @@ textarea {
 }
 .home-info .info-wrapper .jack-wrapper .jack-img-wrapper {
   max-width: 45rem;
+  position: relative;
+}
+.home-info .info-wrapper .jack-wrapper .jack-img-wrapper img {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.home-info .info-wrapper .jack-wrapper .jack-img-wrapper .jack-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(2deg);
+  z-index: -1;
+  opacity: 0.5;
+}
+.home-info .info-wrapper .jack-wrapper .jack-img-wrapper .jack-img-bg:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-7deg);
+  z-index: -2;
+  opacity: 0.3;
 }
 .home-info .info-wrapper .jack-wrapper .jack-text-wrapper {
   padding: 2.5rem 5rem;
@@ -199,7 +241,7 @@ textarea {
   }
 }
 .nav-hero .nav-wrapper {
-  max-width: 1300px;
+  max-width: 1550px;
 }
 @media only screen and (min-width: 1000px) {
   .nav-hero .nav-wrapper {
@@ -363,4 +405,42 @@ textarea {
 .change .hamburger-menu .line-3 {
   transform: rotateZ(405deg) translate(-8px, -6px);
   background-color: #EAEAEA !important;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 20rem;
+  background-color: #e8e8e8;
+}
+.services__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1550px;
+}
+.services__heading {
+  margin-bottom: 10rem;
+  font-size: 9rem;
+}
+.services__wrapper {
+  max-width: 30rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.services__text-wrap {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.services__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.services__text {
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
