@@ -48,6 +48,11 @@ textarea {
   background-color: #2E1C2B;
 }
 
+.footer {
+  width: 100%;
+  background-color: #4A1942;
+}
+
 .home-main {
   background-image: url("/images/main-background.jpg");
   width: 100%;
