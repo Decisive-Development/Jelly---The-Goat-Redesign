@@ -14,8 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/css/main.css">
     <script src="https://kit.fontawesome.com/345d8951ba.js" crossorigin="anonymous"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
+<!-- nav -->
 <section class="nav-hero">
     <div class="nav-wrapper">
         <div class="logo-wrapper">
@@ -40,6 +45,7 @@
         </nav>
     </div>    
 </section>
+<!-- header -->
 <section class="home-main">
     <div class="main-text">
         <h1 id=jelly>jelly &</h1>
@@ -54,6 +60,7 @@
 <div class="page-divider light">
     <h2 class="divider-text">The acoustic duo for <span>any</span> occasion</h2>
 </div>
+<!-- info -->
 <section class="home-info">
     <div class="info-wrapper">
         <div class="guy-wrapper">
@@ -90,12 +97,14 @@
 <div class="page-divider dark">
     <h2 class="divider-text">Playing across Austria and around the world</h2>
 </div>
+<!-- home image -->
 <section class="home-para">
 
 </section>
 <div class="page-divider dark">
     <h2 class="divider-text">Giggin' at any venue...</h2>
 </div>
+<!-- services -->
 <section class="services">
     <h2 class="services__heading">
         Services
@@ -146,8 +155,87 @@
             </div>
         </div>
     </div>
-
 </section>
-    <script src="scripts/navbar.js"></script>
+<!-- testimonials -->
+<section class="test">
+    <h3 class="test__header">Testimonials</h3>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+            <div class="swiper-slide">
+                <h4 class="test__name">Tom Snooze</h4>
+                <p class="test__test">
+                <sup>"</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis asperiores commodi dolor quaerat veritatis eligendi optio ex fugit modi tempora doloribus adipisci, fuga cumque. Aliquid ex architecto in optio.<sup>"</sup>
+                </p>
+                <p class="test__date">May 2022</p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+    <script type="text/javascript" src="scripts/navbar.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 'auto',
+            speed: 800,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            breakpoints: {
+                // when window width is >= 640px
+                1300: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
 </body>
 </html>
